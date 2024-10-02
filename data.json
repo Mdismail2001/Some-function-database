@@ -1,0 +1,123 @@
+[
+    {
+        "model": "products.Category",
+        "pk": "1",
+        "fields":{
+            "title": "Eelectronics",
+            "is_active": true
+        }
+    },
+
+    {
+        "model": "products.Category",
+        "pk": "2",
+        "fields":{
+            "title": "Books",
+            "is_active": true
+        }
+    },
+
+    {
+        "model": "products.Category",
+        "pk": "3",
+        "fields":{
+            "title": "Foods",
+            "is_active": true
+        }
+    },
+
+
+
+    {
+        "model": "products.Product",
+        "pk": "1",
+        "fields":{
+            "title": "Computer",
+            "description": "Macbook",
+            "price": 100000.00,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "products.Product",
+        "pk": "1",
+        "fields":{
+            "title": "Mobile",
+            "description": "iphone",
+            "price": 200000.00,
+            "category": 1
+        }
+    },
+
+    {
+        "model": "products.Product",
+        "pk": "1",
+        "fields":{
+            "title": "Aircondition",
+            "description": "panasonic",
+            "price": 60000.00,
+            "category": 1
+        }
+    },
+
+
+
+
+
+    {
+        "model": "products.Product",
+        "pk": "2",
+        "fields":{
+            "title": "Bangla",
+            "description": "Class nine",
+            "price": 100.00,
+            "category": 2
+
+        }
+    },
+
+    {
+        "model": "products.Product",
+        "pk": "2",
+        "fields":{
+            "title": "English",
+            "description": "Class ten",
+            "price": 200.00,
+            "category": 2
+
+        }
+    },
+
+
+
+
+
+    
+    {
+        "model": "products.Product",
+        "pk": "3",
+        "fields":{
+            "title": "Apple",
+            "description": "From America",
+            "price": 10.00,
+            "category": 3
+ 
+        }
+    },
+
+
+    {
+        "model": "products.Product",
+        "pk": "3",
+        "fields":{
+            "title": "Mobile",
+            "description": "From America",
+            "price": 100.00,
+            "category": 1
+ 
+        }
+    }
+
+
+]

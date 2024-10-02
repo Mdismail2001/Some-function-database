@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+</head>
+<body>
+
+    <!-- Display the form for adding new products -->
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Display the form fields automatically -->
+    </form>
+
+    <!-- Display the list of products -->
+    <h2>Products  List</h2>
+    <ul>
+        <h2> Avarege price of products = {{ avg_price }}</h2>
+        {% for item in products %}
+            <li>
+                <strong>Title:</strong> {{ item.title }}<br>
+                <strong>Description:</strong> {{ item.description }}<br>
+                <strong>Price:</strong> ${{ item.price }}<br>
+                <strong>Category:</strong> {{ item.category.title }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+
+    
+    <ul>
+        <h2> Categorys List</h2>
+        {% for category in categorys %}
+            <li>{{ category.title }} ({{ category.product_count }})
+                 <ul>{% for product in category.product_set.all %} 
+                    <li>{{ product.title}} - {{ product.price }}</li>
+                    {% endfor %}
+                 </ul>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+    </ul>
+
+</body>
+</html>
